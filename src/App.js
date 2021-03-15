@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Carousel from "./components/organisms/Carousel";
+
+const data = [
+  <img
+    src="https://www.essentiallysports.com/wp-content/uploads/images-38-3-1200x843.jpg"
+    alt="red bull"
+  />,
+  <img
+    src="https://www.formula1.com/content/dam/fom-website/manual/Misc/2021preseason/Aston/Aston%20Martin%20Cognizant%20Formula%20One%C2%AE%20Team_AMR21_04.jpg"
+    alt="aston martin"
+  />,
+  <div>
+    <h1>An HTML based carousel element</h1>
+  </div>,
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Carousel slides={data} />
     </div>
   );
 }
